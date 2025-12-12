@@ -142,7 +142,7 @@
     });
   }
 
-  const ADMIN_PASSWORD = "39717084";
+  const ADMIN_PASSWORD = import.meta.env.ADMIN_PASSWORD || "default";
 
   async function addPost() {
     const title = document.getElementById('title').value;
